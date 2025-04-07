@@ -1,0 +1,46 @@
+{
+  "enquiry": [
+    {
+      "id": "ec5b",
+      "firstName": "Abuthahir",
+      "lastName": "s",
+      "email": "q",
+      "mobile": "0995 270 4368",
+      "weight": 23,
+      "height": 100,
+      "bmi": 0.23,
+      "bmiResults": "Underweight",
+      "gender": "Male",
+      "requireTrainer": "yes",
+      "package": "Monthly",
+      "important": [
+        "Toxic fat reduction",
+        "Energy and Endurance",
+        "Building lean muscle"
+      ],
+      "haveGymBefore": "yes",
+      "enquiryDate": "2025-04-17T18:30:00.000Z"
+    },
+    {
+      "id": "26c9",
+      "firstName": "Abuthahir",
+      "lastName": "s",
+      "email": "q",
+      "mobile": "0995 270 4368",
+      "weight": 23,
+      "height": 100,
+      "bmi": 0.23,
+      "bmiResults": "Underweight",
+      "gender": "Male",
+      "requireTrainer": "yes",
+      "package": "Monthly",
+      "important": [
+        "Toxic fat reduction",
+        "Energy and Endurance",
+        "Building lean muscle"
+      ],
+      "haveGymBefore": "yes",
+      "enquiryDate": "2025-04-17T18:30:00.000Z"
+    }
+  ]
+}
