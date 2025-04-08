@@ -20,6 +20,9 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatCardModule} from '@angular/material/card';
+import {MatListModule} from '@angular/material/list';
+import {MatChipsModule} from '@angular/material/chips';
 
 import { HttpClientModule } from '@angular/common/http';
 
@@ -47,6 +50,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatNativeDateModule,
     MatTableModule,
     MatPaginatorModule,
+    MatCardModule,
+    MatListModule,
+    MatChipsModule,
 
     HttpClientModule
   ],

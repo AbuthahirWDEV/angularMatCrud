@@ -15,7 +15,7 @@ export class RegistrationListComponent implements OnInit{
   public users!: User[];
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
-   displayedColumns: string[] = ['id','firstName','lastName','email','mobile','bmiResults','gender','height','weight','bmi','enquiryDate','action']
+   displayedColumns: string[] = ['id','firstName','lastName','email','mobile','bmiResults','gender','package','enquiryDate','action']
 
    constructor(private api:ApiService , private router: Router){
     
@@ -33,8 +33,17 @@ export class RegistrationListComponent implements OnInit{
     })
    }
 
-   edit (id: number){
+   edit (id: string){
     this.router.navigate(['update',id])
+  }
+
+  delete(id: string){
+    const user = this.users.find(u => u.id === id)
+    this.api.deleteRegistered(id)
+    .subscribe(res =>{
+      alert(`${user?.firstName} Deleted successfully `)
+      this.getUsers()
+    })
   }
 
 }

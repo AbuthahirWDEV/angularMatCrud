@@ -18,15 +18,15 @@ export class ApiService {
     return this.http.get<User[]>(this.baseUrl);
   }
 
-  updateRegisterUser(registerObj: User, id:number){
+  updateRegisterUser(registerObj: User, id:string){
     return this.http.put<User>(`${this.baseUrl}/${id}`, registerObj);
   }
 
-  deleteRegistered(id:number){
+  deleteRegistered(id:string){
     return this.http.delete<User>(`${this.baseUrl}/${id}`);
   }
 
-  getRegisteredUserId(id:number){
+  getRegisteredUserId(id:string){
     return this.http.get<User>(`${this.baseUrl}/${id}`);
   }
 
